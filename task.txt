@@ -1,2 +1,3 @@
 https://laravel.com/docs/8.x/eloquent#database-connections
 https://laravel.com/docs/8.x/eloquent-collections#introduction
+https://laravel.com/docs/8.x/eloquent-serialization#serializing-models-and-collections
