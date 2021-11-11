@@ -237,7 +237,7 @@ p {font-size: 12px;}
 	width: 155px;
 }
 
-.solution-item > button {
+.solution-item a {
 	margin-top: -90px;
 	padding: 10px 70px;
 	opacity: 0;
@@ -248,7 +248,7 @@ p {font-size: 12px;}
 	height: auto;
 }
 
-.solution-item:hover > button {
+.solution-item:hover a {
 	margin-top: 35px;
 	opacity: 1;
 }

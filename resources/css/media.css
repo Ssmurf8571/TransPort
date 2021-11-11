@@ -53,8 +53,7 @@
 		display: block!important;
 	}
 
-	footer ul.nav li:nth-child(1) {margin-left: 5px;}
-	footer ul.nav li:nth-child(2) {margin-left: -11px;}
+	footer ul.nav li:nth-child(2) {margin-left: 61px;}
 }
 
 @media(max-width: 576px) {

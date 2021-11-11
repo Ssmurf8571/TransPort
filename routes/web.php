@@ -13,29 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
-Route::get('/', function () {
-    return redirect(config('app.locale'));
+Route::get('/welcome', function () {
+    return view('welcome');
 });
-
-Route::get('/{locale}', function ($locale) {
-    if (! in_array($locale, ['en', 'ru'])) {
-        abort(404);
-    }
-
-    App::setLocale($locale);
-
-    return view('index');
-});
-
-Route::post('/action', function () {
-    return dd(Request::all());
-});
-
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
+Route::post('/action', 'App\Http\Controllers\SiteController@post');
+
+Route::get('/', 'App\Http\Controllers\SiteController@default');
+
+Route::get('/{locale}', 'App\Http\Controllers\SiteController@openPage');

@@ -2,10 +2,10 @@ $(window).on('load', function() {
 /*------------------
 Background Set
 --------------------*/
-$('.set-bg').each(function() {
-    var bg = $(this).data('src');
-    $(this).css('background-image', 'linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(' + bg + ')');
-});
+    $('.set-bg').each(function() {
+        var bg = $(this).data('src');
+        $(this).css('background-image', 'linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(' + bg + ')');
+    });
 });
 
 
@@ -28,7 +28,7 @@ $('.hero-slider').owlCarousel({
 Function Animated Numbers
 --------------------*/
 $(document).ready(function () {
-
+    
     var show = true;
     var countbox = ".about-us";
     $(window).on("scroll load resize", function () {

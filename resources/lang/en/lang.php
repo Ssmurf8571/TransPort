@@ -2,8 +2,6 @@
 
 return [
 
-    't-phone' => '+7(999) 888 54-21',
-    't-email' => 'test@mail.ru',
     't-work-day' => 'Mon - Sat: 7:00 - 17:00',
     'lang' => 'language',
     'header-logo-uptitle' => 'TransPort',
@@ -47,6 +45,5 @@ return [
     'visit-us' => 'visit us',
     'email-us' => 'email us',
     'call-us' => 'call us',
-    'adress' => 'Russia, vyazniki',
 
 ];
